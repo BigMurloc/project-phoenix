@@ -1,0 +1,48 @@
+{
+  "name": "project-phoenix-backend",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "./project-phoenix-backend",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nxrocks/nx-spring-boot:build",
+      "options": {
+        "root": "./project-phoenix-backend"
+      },
+      "dependsOn": [
+        "^install"
+      ],
+      "outputs": [
+        "{workspaceRoot}/project-phoenix-backend/target"
+      ]
+    },
+    "install": {
+      "executor": "@nxrocks/nx-spring-boot:install",
+      "options": {
+        "root": "./project-phoenix-backend"
+      },
+      "dependsOn": [
+        "^install"
+      ],
+      "outputs": [
+        "{workspaceRoot}/project-phoenix-backend/target"
+      ]
+    },
+    "test": {
+      "executor": "@nxrocks/nx-spring-boot:test",
+      "options": {
+        "root": "./project-phoenix-backend"
+      },
+      "outputs": [
+        "{workspaceRoot}/project-phoenix-backend/target"
+      ]
+    },
+    "clean": {
+      "executor": "@nxrocks/nx-spring-boot:clean",
+      "options": {
+        "root": "./project-phoenix-backend"
+      }
+    }
+  },
+  "tags": []
+}

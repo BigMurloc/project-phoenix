@@ -13,7 +13,13 @@
     },
     "e2e": {
       "cache": true
+    },
+    "install": {
+      "cache": true
     }
   },
-  "nxCloudAccessToken": "MWI5Mjc4YWYtNmE0My00MTFlLTliYWItN2Q5MzRjODc1MWQ0fHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "MWI5Mjc4YWYtNmE0My00MTFlLTliYWItN2Q5MzRjODc1MWQ0fHJlYWQtd3JpdGU=",
+  "plugins": [
+    "@nxrocks/nx-spring-boot"
+  ]
 }
