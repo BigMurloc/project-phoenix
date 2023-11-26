@@ -1,0 +1,6 @@
+server:
+  port: ${SERVICE_PORT}
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
