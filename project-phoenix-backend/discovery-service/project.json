@@ -1,0 +1,75 @@
+{
+  "name": "discovery-service",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "project-phoenix-backend/discovery-service/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nxrocks/nx-spring-boot:build",
+      "options": {
+        "root": "project-phoenix-backend/discovery-service"
+      },
+      "dependsOn": [
+        "^install"
+      ],
+      "outputs": [
+        "{workspaceRoot}/project-phoenix-backend/discovery-service/target"
+      ]
+    },
+    "install": {
+      "executor": "@nxrocks/nx-spring-boot:install",
+      "options": {
+        "root": "project-phoenix-backend/discovery-service"
+      },
+      "dependsOn": [
+        "^install"
+      ],
+      "outputs": [
+        "{workspaceRoot}/project-phoenix-backend/discovery-service/target"
+      ]
+    },
+    "test": {
+      "executor": "@nxrocks/nx-spring-boot:test",
+      "options": {
+        "root": "project-phoenix-backend/discovery-service"
+      },
+      "outputs": [
+        "{workspaceRoot}/project-phoenix-backend/discovery-service/target"
+      ]
+    },
+    "clean": {
+      "executor": "@nxrocks/nx-spring-boot:clean",
+      "options": {
+        "root": "project-phoenix-backend/discovery-service"
+      }
+    },
+    "run": {
+      "executor": "@nxrocks/nx-spring-boot:run",
+      "options": {
+        "root": "project-phoenix-backend/discovery-service"
+      }
+    },
+    "serve": {
+      "executor": "@nxrocks/nx-spring-boot:serve",
+      "options": {
+        "root": "project-phoenix-backend/discovery-service"
+      }
+    },
+    "build-image": {
+      "executor": "@nxrocks/nx-spring-boot:build-image",
+      "options": {
+        "root": "project-phoenix-backend/discovery-service"
+      },
+      "outputs": [
+        "{workspaceRoot}/project-phoenix-backend/discovery-service/target"
+      ]
+    },
+    "build-info": {
+      "executor": "@nxrocks/nx-spring-boot:build-info",
+      "options": {
+        "root": "project-phoenix-backend/discovery-service"
+      }
+    }
+  },
+  "tags": []
+}

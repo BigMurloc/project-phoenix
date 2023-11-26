@@ -8,6 +8,7 @@
 	<modules>
 		<module>api-gateway-service</module>
 		<module>config-service</module>
+		<module>discovery-service</module>
 	</modules>
 </project>
 <!-- For more information about Spring boot multi-modules projects, go to: https://spring.io/guides/gs/multi-module/ -->
