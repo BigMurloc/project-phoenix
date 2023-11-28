@@ -14,3 +14,16 @@ management:
     web:
       exposure:
         include: health,gateway
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: recipe-service
+          uri: lb://recipe-service
+          predicates:
+            - Path=/recipe/**
+          filters:
+            - RewritePath=/recipe/(?<path>.*), /$\{path}
